@@ -1,0 +1,214 @@
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  padding: 0px;
+  font-family: 'Nunito', Helvetica, sans-serif;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../image/header.jpg);
+  padding: 1% 3%;
+  /* background-color: cornflowerblue; */
+}
+.nav-kanan .icon {
+  display: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #feb743; */
+}
+.logo {
+  justify-content: left;
+  text-decoration: none;
+  color: #FDFDFD;
+  font-family: luminari;
+  font-size: 30px;
+  margin-left: 80px;
+  /* background-color: aquamarine; */
+}
+.nav ul li {
+  display: inline-block;
+  /* justify-content: center; */
+}
+.nav ul li a{
+  color: #FDFDFD;
+  text-decoration: none;
+  margin: 20px;
+}
+.nav ul li a:hover{
+  color: #dc6713;
+  transition: .3s ease-in-out;
+}
+.nav-kanan ul li {
+  display: inline-block;
+}
+.nav-kanan ul li a{
+  color: #FDFDFD;
+  text-decoration: none;
+}
+.nav-kanan ul li a:hover {
+  color: #dc6713;
+  transition: .3s ease-in-out;
+}
+#search {
+  width: 100px;
+  box-sizing: border-box;
+  border: none;
+  font-size: 16px;
+  background-color: transparent;
+  color: #FDFDFD;
+}
+/* ::-webkit-input-placeholder{
+  color: #FDFDFD;
+  font-family: 'Nunito';
+  transition: opacity .2s ease-in-out;
+} */
+:focus::-webkit-input-placeholder{
+  opacity: 0.3;
+}
+.fa-search {
+  padding: 10px;
+  color: #FDFDFD;
+}
+.button {
+  background-color: #dc6713; /* Green */
+  border: none;
+  color: white;
+  /* padding: 15px 32px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-family: 'nunito';
+  border-radius: 10px;
+  /* font-size: 16px; */
+}
+.button1 {
+  padding: 3px 18px;
+  font-size: 16px;
+}
+@media screen and (max-width: 1100px) {
+  .nav a {display: none;}
+  .nav-kanan a{display: none;}
+  .nav-kanan .fa-search{display: none;}
+  .nav-kanan input[type=text]{ display: none;}
+  .nav-kanan a.icon {
+    float: right;
+    display: block;
+    font-size: 20px;
+    margin-right: 120%;
+  }
+  .logo {
+    margin-left: 7%;
+    /* padding: 0; */
+    /* background-color: brown; */
+  }
+  .header p {display: none;}
+  .header h3 {font-size: 30px;}
+  .judul {font-size: 12px;}
+}
+.row {
+  display: flex;
+  align-items: center;
+  height: 80%;
+  font-family: helvetica;
+  padding: 0 7%;
+}
+.col {
+  flex-basis: 40%;
+}
+.col h1 {
+  font-size: 70px;
+  color: #FDFDFD;
+  margin: 0;
+}
+.col p {
+  font-size: 14px;
+  color: #fdfdfd;
+  margin: 15px 2px;
+}
+
+.isian {
+	width: 400px;
+	/* border: 1px solid black; */
+	justify-content: center;
+	padding: 20px;
+	background-color: #FDFDFD;
+  margin: 0 55%;
+  margin-top: 15%;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  /* background-color: blueviolet; */
+}
+.isian h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: luminari;
+  color: #dc6713;
+  font-size: 35px;
+}
+
+.isian p{
+  text-align: center;
+  font-size: 15px;
+}
+::-webkit-input-placeholder{
+  color: #e0e0e0;
+  font-family: 'Nunito';
+  transition: opacity .2s ease-in-out;
+  font-size: 15px;
+}
+::-webkit-password-placeholder{
+  color: #d4d4d4;
+  font-family: 'Nunito';
+  transition: opacity .2s ease-in-out;
+  font-size: 15px;
+}
+#input {
+  color: black;
+width: 100%;
+  padding: 9px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+  /* width: 100px; */
+  box-sizing: border-box;
+  /* border: none; */
+  font-size: 16px;
+  background-color: transparent;
+  /* color: #FDFDFD; */
+}
+@media screen and (max-width: 1100px) {
+  .col{
+    display: none;
+    justify-content: center;
+    /* align-content: center; */
+  }
+  .row{
+    /* background-color: blueviolet; */
+    justify-content: center;
+  }
+  .isian{
+    margin: 0 0;
+    margin-top: 15%;
+    /* background-color: blueviolet; */
+  }
+}
+.button2 {
+	padding: 10px 20px;
+  font-size: 15px;
+  width: 100%;
+}
+.psw {
+	float: right;
+}
